@@ -39,7 +39,15 @@ public class soThanhChu {
                     } else {
                         System.out.println("Mười " + soThanhChu[hangDonVi]);
                     }
-                } else {
+                } else if (hangChuc == 0) {
+                    if (hangDonVi == 5) {
+                        System.out.println(soThanhChu[hangTram] + " trăm " + "lẻ Lăm");
+                    } else if (hangDonVi == 0) {
+                        System.out.println(soThanhChu[hangTram] + " trăm ");
+                    }else  {
+                        System.out.println("lẻ " + soThanhChu[hangDonVi]);
+                    }
+                }else  {
                     if (hangDonVi == 0) {
                         System.out.println(soThanhChu[hangTram] + " trăm " + soThanhChu[hangChuc] + " mươi");
                     } else {
